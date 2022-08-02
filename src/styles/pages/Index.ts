@@ -17,7 +17,7 @@ export const Cover = styled.div `
   width: 100%;
   align-self: flex-start;
   background-image:
-    linear-gradient(to bottom, rgba(2, 0, 51, 0.6), rgba(2, 0, 51, 0.4)),
+    linear-gradient(to bottom, rgba(2, 0, 51, 0.4), rgba(29, 31, 143, 0.6)),
     url('./cover.svg');
 
 
@@ -29,10 +29,7 @@ export const Cover = styled.div `
   p {
     font-size: 32px;
   }
-    /* img {
-    height: 20px;
-  } */
-  `;
+`;
 
 export const Title = styled.div`
 display: flex;
@@ -55,5 +52,17 @@ p {
 
 export const InfoContainer = styled.div `
   color: '#000';
+  background-color: ${props => props.theme.colors.background};
+  height: 400px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  margin-top: 40vh;
+  margin-left: 50%;
+  border-radius: 8px;
+  padding: 0 18px;
+  transform: translateX(-50%);;
 
 `;
