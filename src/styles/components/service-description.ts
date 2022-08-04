@@ -4,7 +4,8 @@ interface IContainerStyle {
   textColor: string;
   gradientStart: string;
   gradientEnd?: string;
-  titleColor: string;
+  titleGradient: string;
+  titleGradientEnd: string;
 }
 export const Container = styled.div<IContainerStyle> `
   display: flex;
@@ -23,7 +24,9 @@ export const Container = styled.div<IContainerStyle> `
   border-radius: 8px;
 
   h1 {
-    color: ${props => props.titleColor };
+    background: linear-gradient(90deg, ${props => props.titleGradient} 0%, ${props => props.titleGradientEnd} 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
 `;

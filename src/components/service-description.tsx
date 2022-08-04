@@ -13,7 +13,8 @@ const ServiceDescription: React.FC<Props> = ({title, children, darkTheme}: Props
       gradientStart={darkTheme? theme.colors.mainGradientStart : theme.colors.background}
       gradientEnd={darkTheme && theme.colors.mainGradientEnd}
       textColor={darkTheme ? theme.colors.background : theme.colors.text}
-      titleColor={darkTheme ? theme.colors.background : theme.colors.mainGradientStart}
+      titleGradient={darkTheme ? theme.colors.background : theme.colors.mainGradientStart}
+      titleGradientEnd={darkTheme ? theme.colors.background : theme.colors.mainGradientEnd}
     >
       <TitleContainer>
         <hr />

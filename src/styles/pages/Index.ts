@@ -63,6 +63,6 @@ export const InfoContainer = styled.div `
   margin-left: 50%;
   border-radius: 8px;
   padding: 0 18px;
-  transform: translateX(-50%);;
+  transform: translateX(-50%);
 
 `;
