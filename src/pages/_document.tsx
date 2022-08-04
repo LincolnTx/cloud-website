@@ -43,6 +43,15 @@ export default class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
 
+          <meta name='description' content='Suba seu elo em vários jogos como league of legend, valorant e muito mais' />
+          <meta property='og:title' content='Elojobs Cloud' />
+          <meta
+            property='og:description'
+            content='Te ajudando a melhor e subir de elo'
+          />
+          {/* <meta property='og:url' content='https://lanchoneteagarikov.com/' /> */}
+          <meta property='og:type' content='website' />
+
           <link
             href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
             rel="stylesheet"
