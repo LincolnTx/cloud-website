@@ -1,14 +1,13 @@
-import React, { ReactNode } from "react";
-import { Container, ContractButton, TitleContainer } from "../styles/components/service-description";
-import theme from "../styles/theme";
+import React, { ReactNode } from 'react';
+import { Container, ContractButton, TitleContainer } from '../styles/components/service-description';
+import theme from '../styles/theme';
 
 export interface Props {
   darkTheme: boolean;
   title: string;
-  children?: ReactNode;
+  children: ReactNode;
 }
-const ServiceDescription: React.FC<Props> = ({title, children, darkTheme}: Props) => {
-  return (
+const ServiceDescription: React.FC<Props> = ({title, children, darkTheme}: Props) => (
     <Container
       gradientStart={darkTheme? theme.colors.mainGradientStart : theme.colors.background}
       gradientEnd={darkTheme && theme.colors.mainGradientEnd}
@@ -26,6 +25,5 @@ const ServiceDescription: React.FC<Props> = ({title, children, darkTheme}: Props
       <ContractButton>Contratar</ContractButton>
     </Container>
   );
-};
 
 export default ServiceDescription;

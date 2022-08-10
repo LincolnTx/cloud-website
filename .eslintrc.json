@@ -5,30 +5,62 @@
         "node": true,
         "jest": true
     },
+    "plugins": [
+      "react",
+      "@typescript-eslint",
+      "import"
+    ],
     "extends": [
-        "plugin:react/recommended",
+        "next/core-web-vitals",
         "airbnb",
         "plugin:@typescript-eslint/recommended",
-        "prettier/@typescript-eslint",
-        "prettier/airbnb",
-        "prettier/react"
+        "prettier"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": "latest",
-        "sourceType": "module"
+      "ecmaFeatures": {
+          "jsx": true
+      },
+      "ecmaVersion": "latest",
+      "sourceType": "module"
     },
-    "plugins": [
-        "react",
-        "@typescript-eslint",
-        "prettier"
-    ],
+
     "rules": {
-        "prettier/prettier": "error",
-        "space-before-function-paren": "off",
-        "react/prop-types": "off"
+      "@typescript-eslint/no-unused-vars": "error",
+      "@typescript-eslint/no-explicit-any": "error",
+      "space-before-function-paren": "off",
+      "react/prop-types": "off",
+      "import/no-unresolved": "error",
+      "import/extensions": ["error", "always",
+        {
+          "js": "never",
+          "ts": "never",
+          "tsx": "never",
+          "mjs": "never"
+        }
+      ],
+      "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".jsx", "ts"] }],
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-props-no-spreading": "off",
+      "react/function-component-definition": [
+        "error",
+        {
+          "namedComponents": ["function-declaration", "arrow-function"],
+          "unnamedComponents": "arrow-function"
+        }
+      ]
+    },
+    "settings": {
+      "import/parsers": {
+        "@typescript-eslint/parser": [
+          ".ts",
+          ".tsx"
+        ]
+      },
+      "import/resolver": {
+        "typescript": {
+          "alwaysTryTypes": true
+        }
+      }
     }
 }

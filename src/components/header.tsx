@@ -1,11 +1,11 @@
-import { BtnCliente, ButtonArea, Container, Logo } from "../styles/components/header";
+import React from 'react';
 import { FaCaretDown, FaUserAlt } from 'react-icons/fa';
 import Image from 'next/image';
+import { BtnCliente, ButtonArea, Container, Logo } from '../styles/components/header';
 import logo from '../assets/logo.svg';
 import textLogo from '../assets/text-logo.svg';
 
-const Header: React.FC = () => {
-  return(
+const Header: React.FC = () => (
     <Container>
       <Logo>
         <Image src={logo} alt="Cloudinho"/>
@@ -14,7 +14,7 @@ const Header: React.FC = () => {
 
       <ButtonArea>
         <ul>
-          <li>Inicio </li>
+          <li>Inicio</li>
           <li>Serviços <FaCaretDown/></li>
           <li>Contato <FaCaretDown/></li>
         </ul>
@@ -24,7 +24,6 @@ const Header: React.FC = () => {
         </BtnCliente>
       </ButtonArea>
     </Container>
-  );
-}
+  )
 
 export default Header;

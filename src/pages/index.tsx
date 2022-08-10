@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <InfoContainer>
-        <ServiceDescription title='Elo Job' darkTheme={true} >
+        <ServiceDescription title='Elo Job' darkTheme >
           Nosso serviço mais rápido. Um de nossos jogadores irá jogar na sua conta
           até a divisão requirida. Você também pode customizar o serviço, como lane,
           campeões, restrição de horário etc.
@@ -17,7 +17,7 @@ export default function Home() {
           funciona a mente de um jogador de nível alto para vencer o jogo!
         </ServiceDescription>
 
-        <ServiceDescription title='Coach' darkTheme={true} >
+        <ServiceDescription title='Coach' darkTheme >
           Melhora sua gameplay com ensinamentos de um professor HIGH ELO te explicando na
           prática, analisando seus replays e muito mais!
         </ServiceDescription>
