@@ -27,7 +27,9 @@ export const Cover = styled.div `
   justify-content: center;
 
   p {
+    font-weight: 400;
     font-size: 32px;
+    filter: brightness(80%);
   }
 `;
 
@@ -51,7 +53,7 @@ p {
 `;
 
 export const InfoContainer = styled.div `
-  color: '#000';
+  color: #000;
   background-color: ${props => props.theme.colors.background};
   height: 400px;
   width: 50%;
