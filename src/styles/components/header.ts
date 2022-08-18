@@ -15,12 +15,6 @@ export const Container = styled.header`
 
 `;
 
-export const Logo = styled.div`
-  img:last-child {
-    margin: 300px;
-  }
-`;
-
 export const ButtonArea = styled.div`
   display: flex;
   justify-content: space-between;
