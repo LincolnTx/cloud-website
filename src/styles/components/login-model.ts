@@ -55,7 +55,6 @@ export const Content = styled.main`
   border-bottom-left-radius: 8px;
   height: 65%;
   width: 100%;
-  }
 `;
 
 export const LabelArea = styled.div`

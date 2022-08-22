@@ -35,18 +35,18 @@ export const Container = styled.div<IContainerStyle> `
 `;
 
 export const ContractButton = styled.button`
-border: none;
-color: ${props => props.theme.colors.background};
-font: 400 18px 'Roboto', sans-serif;
-border-radius: 8px;
-background: linear-gradient(to right, ${props => props.theme.colors.primary}, ${props => props.theme.colors.secondary});
-height: 40px;
-width: 80%;
-transition: filter 0.2s;
+  border: none;
+  color: ${props => props.theme.colors.background};
+  font: 400 18px 'Roboto', sans-serif;
+  border-radius: 8px;
+  background: linear-gradient(to right, ${props => props.theme.colors.primary}, ${props => props.theme.colors.secondary});
+  height: 40px;
+  width: 80%;
+  transition: filter 0.2s;
 
-cursor: pointer;
-:hover {
-  filter: brightness(120%);
+  cursor: pointer;
+  :hover {
+    filter: brightness(120%);
 }
 `;
 
