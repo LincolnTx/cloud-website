@@ -7,6 +7,12 @@ interface IContainerStyle {
   titleGradient: string;
   titleGradientEnd: string;
 }
+
+interface ITitleStyle {
+  gradientStart: string;
+  gradientEnd: string;
+}
+
 export const Container = styled.div<IContainerStyle> `
   display: flex;
   flex-direction: column;
@@ -21,7 +27,6 @@ export const Container = styled.div<IContainerStyle> `
   text-align: center;
   color: ${props => props.textColor};
   background: linear-gradient(to right, ${props => props.gradientStart}, ${props => props.gradientEnd});
-  //border: 1px solid #000;
   box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), 0 4px 6px rgba(0,0,0,0.45);
   border-radius: 8px;
 
@@ -50,4 +55,9 @@ export const ContractButton = styled.button`
 }
 `;
 
-export const TitleContainer = styled.div``;
+export const HorizontalDivider = styled.div<ITitleStyle>`
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, ${props => props.gradientStart}, ${props => props.gradientEnd});
+`;

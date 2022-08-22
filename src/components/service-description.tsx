@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { Container, ContractButton, TitleContainer } from '../styles/components/service-description';
+import { Container, ContractButton, HorizontalDivider } from '../styles/components/service-description';
 import theme from '../styles/theme';
 
 export interface Props {
@@ -15,11 +15,19 @@ const ServiceDescription: React.FC<Props> = ({title, children, darkTheme}: Props
       titleGradient={darkTheme ? theme.colors.background : theme.colors.mainGradientStart}
       titleGradientEnd={darkTheme ? theme.colors.background : theme.colors.mainGradientEnd}
     >
-      <TitleContainer>
-        <hr />
+      <div
+
+      >
+        <HorizontalDivider
+          gradientStart={darkTheme? theme.colors.primary : theme.colors.mainGradientStart}
+          gradientEnd={darkTheme ? theme.colors.secondary : theme.colors.mainGradientEnd}
+        />
         <h1>{title}</h1>
-        <hr />
-      </TitleContainer>
+        <HorizontalDivider
+          gradientStart={darkTheme? theme.colors.primary : theme.colors.mainGradientStart}
+          gradientEnd={darkTheme ? theme.colors.secondary : theme.colors.mainGradientEnd}
+        />
+      </div>
 
       <p>{children}</p>
       <ContractButton>Contratar</ContractButton>
