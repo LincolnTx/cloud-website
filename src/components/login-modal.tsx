@@ -10,7 +10,7 @@ import {
   ButtonArea,
   LabelArea,
   Centralizer
-} from "../styles/components/login-model";
+} from "../styles/components/login-modal";
 import MainLogo from "./main-logo";
 
 export default function LoginModal() {

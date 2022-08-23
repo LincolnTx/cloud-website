@@ -12,9 +12,9 @@ export default function Home() {
       </Head>
       <Title>
         <h1>Elojob</h1>
-        <p>Cloud</p>
+        <span>Cloud</span>
       </Title>
-      <p>Seu elo nas núvens!</p>
+      <span>Seu elo nas núvens!</span>
     </Upside>
 
     <Container>

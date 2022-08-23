@@ -10,6 +10,7 @@ export const Container = styled.div`
   color: ${props => props.theme.colors.background};
   border-radius: 8px;
 `;
+
 export const HeaderContainer = styled.header`
   display: flex;
   height: 35%;

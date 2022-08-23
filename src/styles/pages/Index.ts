@@ -18,10 +18,11 @@ export const Upside = styled.div`
   align-items: center;
   justify-content: center;
 
-  p {
+  span {
     font-weight: 400;
     font-size: 32px;
-    filter: brightness(80%);
+    color: ${props => props.theme.colors.opacity};
+    font-weight: 250;
   }
 
   padding-bottom: 56px;
@@ -65,7 +66,7 @@ export const Title = styled.div`
     margin-right: 4px;
   }
 
-  p {
+  span {
     font-size: 59px;
     line-height: 32px;
     font-weight: 400;
