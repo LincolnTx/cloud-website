@@ -8,6 +8,8 @@ const theme = {
     secondary: '#FF8B17',
     menu: '#000C1C',
     menuSelected: '#C5C6C773',
+    titleOne: '#848C93',
+    faqBackground: '#D9D9D94D',
     opacity: '#ADB5BD',
     mainGradientStart: 'rgba(2, 0, 51, 1)',
     mainGradientEnd: 'rgba(29, 31, 143, 1)',

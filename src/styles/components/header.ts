@@ -19,6 +19,7 @@ export const ButtonArea = styled.div`
   display: flex;
   justify-content: space-between;
   width: 40%;
+  font: 400 18px Roboto, "sans-serif";
 
   ul {
     list-style: none;
@@ -55,7 +56,7 @@ export const BtnCliente = styled.button `
   color: ${props => props.theme.colors.background};
   cursor: pointer;
   font-weight: 500;
-  font-size: 10px;
+  font-size: 12px;
   text-transform: uppercase;
 
   :hover {
