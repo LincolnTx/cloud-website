@@ -5,6 +5,7 @@ interface IModalStyle {
 }
 export const Modal = styled.div<IModalStyle>`
   position: fixed;
+  z-index: 1;
   display: ${props => props.visible ? 'flex' : 'none'};
   width: 100%;
   height: 100vh;

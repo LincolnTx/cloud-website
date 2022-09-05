@@ -1,10 +1,10 @@
 import Head from 'next/head';
+import Faq from '../components/faq-component';
 import ServiceDescription from '../components/service-description';
 import { Container, Title, InfoContainer, Main, Upside, Downside } from '../styles/pages/Index';
 
 export default function Home() {
   return (
-
   <Main>
     <Upside>
       <Head>
@@ -38,6 +38,8 @@ export default function Home() {
     </Container>
 
     <Downside />
+
+    <Faq />
   </Main>
   )
 }
