@@ -62,6 +62,7 @@ export default function ServicesList() {
             marcas imagens e marcas de serviço pertecem a seus respectivos proprietários.
           </span>
         </div>
+        {/* TODO: Adicionar métodos de pagamento aceitos */}
         <div className="payment-info" >
           <span>Formas de pagamento</span>
           <div>Adicionar método de pagamento aceitos</div>
