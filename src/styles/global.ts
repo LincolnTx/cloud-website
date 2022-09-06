@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle `
   * {
@@ -55,4 +55,16 @@ export default createGlobalStyle `
       filter: brightness(120%);
     }
   }
+`;
+
+export type DividerProps = {
+  height: string;
+  width: string;
+  background?: string;
+}
+
+export const Divider = styled.hr<DividerProps>`
+  height: ${props => props.height};
+  width: ${props => props.width};
+  background: ${props => props.background};
 `;
