@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Faq from '../components/faq-component';
+import FeedbackList from '../components/feedback-list';
 import ServiceDescription from '../components/service-description';
 import ServicesList from '../components/services-list';
 import { Container, Title, InfoContainer, Main, Upside, Downside } from '../styles/pages/Index';
@@ -41,6 +42,8 @@ export default function Home() {
     <Downside />
 
     <Faq />
+
+    <FeedbackList />
 
     <ServicesList />
   </Main>
