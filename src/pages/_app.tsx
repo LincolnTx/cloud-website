@@ -1,5 +1,4 @@
 import { ThemeProvider } from 'styled-components';
-import Header from '../components/header';
 import Layout from '../components/layout';
 import GlobalStyle from '../styles/global';
 import theme from '../styles/theme';

@@ -7,7 +7,7 @@ import { Container, Modal } from "../styles/components/modal-container";
 export interface ModalProps {
   children: ReactNode;
   activeModal: boolean;
-  toggleModal(): void;
+  toggleModal: () => void;
 
 }
 export default function ModalContainer({ children, activeModal, toggleModal }: ModalProps) {

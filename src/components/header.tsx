@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import { FaCaretDown, FaUserAlt } from 'react-icons/fa';
 import { BtnCliente, ButtonArea, Container } from '../styles/components/header';
 import LoginModal from './login-modal';
@@ -8,9 +8,14 @@ import ModalContainer from './modal-container';
 const Header: React.FC = () => {
   const [modalState, setModalState] = useState(false);
 
-  function toggleModal() {
+  // function modalToggle() {
+  //   setModalState(!modalState);
+  // }
+
+  const toggleModal = useCallback(() => {
     setModalState(!modalState);
-  }
+  }, [setModalState, modalState]);
+
 
   return (
     <Container>
